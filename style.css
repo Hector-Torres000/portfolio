@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(52, 53, 61);
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    margin-top: 1%;
+    text-align: center;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 25%;
+    border-radius: 50%;
+    display: block;
+    margin: auto auto;
+}
