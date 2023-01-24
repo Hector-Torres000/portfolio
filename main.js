@@ -20,7 +20,7 @@ for (const button of buttons) {
     console.log(section);
     giveHidden(header);
     removeHidden(section);
-    createExit(section);
+    exitFunction(section);
   });
 }
 function getId(element) {
@@ -34,16 +34,11 @@ function giveHidden(element) {
 function removeHidden(element) {
   element.classList.remove('hidden');
 }
-function createExit(element) {
-  const exitButton = document.createElement('button');
-  exitButton.textContent = 'X';
-  exitButton.classList.add('exitBtn');
-  exitFunction(exitButton);
-  element.append(exitButton);
-}
+
 function exitFunction(element) {
-  element.addEventListener('click', () => {
-    element.parentElement.classList.add('hidden');
+  const exitBtn = element.children[0];
+  exitBtn.addEventListener('click', () => {
+    exitBtn.parentElement.classList.add('hidden');
     header.classList.remove('hidden');
   });
 }

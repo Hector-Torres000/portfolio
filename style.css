@@ -12,16 +12,32 @@ body {
   padding: 2rem;
   text-align: center;
   height: 100vh;
-  border: solid 2px green;
+  /* border: solid 2px green; */
+  font-size: 2rem;
+  background-image: url('images/farmLand.jpg');
+  background-size: cover;
+  background-attachment: local;
+  color: white;
+  text-shadow: 1px 1px 0px black;
 }
 /*-----header-----*/
 header {
-  margin-top: 25%;
+  margin-top: 15%;
+}
+header h1 {
+  /* border: solid 2px blue; */
+  margin-bottom: 0;
+}
+header span {
+  display: block;
+  margin-bottom: 3%;
+  margin-top: 0%;
+  /* border: solid 2px blue; */
 }
 /*---nav---*/
 nav,
 nav * {
-  border: solid 2px black;
+  /* border: solid 2px black; */
 }
 
 header nav ul {
@@ -38,7 +54,7 @@ header nav ul li:hover {
 /*-----main-----*/
 main,
 main * {
-  border: solid 2px darkred;
+  /* border: solid 2px darkred; */
 }
 main section {
   border: solid 2px blue;
@@ -50,12 +66,12 @@ main section {
   display: none;
 }
 .exitBtn {
-  width: 5%;
-  height: 5%;
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /* .zIndex {
   position: absolute;
