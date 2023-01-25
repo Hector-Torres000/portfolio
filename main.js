@@ -17,7 +17,6 @@ for (const button of buttons) {
   button.addEventListener('click', () => {
     const id = getId(button);
     const section = document.querySelector(`#${listSection[id]}`);
-    console.log(section);
     giveHidden(header);
     removeHidden(section);
     exitFunction(section);

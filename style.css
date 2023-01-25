@@ -16,7 +16,6 @@ body {
   font-size: 2rem;
   background-image: url('images/farmLand.jpg');
   background-size: cover;
-  background-attachment: local;
   color: white;
   text-shadow: 1px 1px 0px black;
 }
@@ -56,9 +55,18 @@ main,
 main * {
   /* border: solid 2px darkred; */
 }
+/*---sections---*/
 main section {
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
   position: relative;
+  height: 80vh;
+  widows: 80vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 3%;
+}
+main section h2 {
+  text-decoration: underline;
 }
 
 /***JS Classes***/
@@ -68,10 +76,9 @@ main section {
 .exitBtn {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 3%;
+  right: 3%;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 /* .zIndex {
   position: absolute;
