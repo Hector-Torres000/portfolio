@@ -17,6 +17,7 @@ for (const button of buttons) {
   button.addEventListener('click', () => {
     const id = getId(button);
     const section = document.querySelector(`#${listSection[id]}`);
+    easeOut(header);
     giveHidden(header);
     removeHidden(section);
     exitFunction(section);
@@ -45,3 +46,7 @@ function exitFunction(element) {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('img').style.opacity = 1;
 });
+
+function easeOut(element) {
+  element.classList.add('easeOut');
+}
