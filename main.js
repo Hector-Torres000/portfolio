@@ -41,3 +41,7 @@ function exitFunction(element) {
     header.classList.remove('hidden');
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('img').style.opacity = 1;
+});
