@@ -17,6 +17,8 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
   text-shadow: 1px 1px 0px black;
+
+  position: relative;
 }
 
 body img {
@@ -72,19 +74,23 @@ header nav ul li:hover {
   cursor: pointer;
 }
 /*-----main-----*/
-main,
-main * {
-  /* border: solid 2px darkred; */
-}
+
 /*---sections---*/
 main section {
   /* border: solid 2px blue; */
-  position: relative;
   height: 80vh;
+  width: 50vw;
   widows: 80vw;
   background-color: rgba(0, 0, 0, 0.8);
   text-align: left;
   padding: 3%;
+
+  position: absolute;
+  top: 10%;
+  right: 27%;
+  opacity: 0;
+  z-index: -10;
+  transition: all 1s ease-in;
 }
 main section h2 {
   text-decoration: underline;
@@ -109,4 +115,13 @@ main section h2 {
 .easeIn {
   opacity: 1;
   transition: all 1s ease-in;
+}
+
+.transformUp {
+  opacity: 1;
+  z-index: 10;
+}
+.transformDown {
+  opacity: 0;
+  z-index: -10;
 }

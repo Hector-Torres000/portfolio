@@ -16,22 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('img').style.opacity = 1;
 });
 
-for (const section of mainSections) {
-  section.classList.add('hidden');
-}
+// for (const section of mainSections) {
+//   section.classList.add('hidden');
+// }
 
 for (const button of buttons) {
   button.addEventListener('click', () => {
     const id = getId(button);
     const section = document.querySelector(`#${listSection[id]}`);
     easeOut(header);
-    removeHidden(section);
+    transformUp(section);
+    // removeHidden(section);
   });
 }
 
 for (let btn of exitBtns) {
   btn.addEventListener('click', () => {
-    btn.parentElement.classList.add('hidden');
+    const section = btn.parentElement;
+    // section.classList.add('hidden');
+    transformDown(section);
     easeIn(header);
   });
 }
@@ -56,4 +59,13 @@ function easeOut(element) {
 function easeIn(element) {
   element.classList.remove('easeOut');
   element.classList.add('easeIn');
+}
+
+function transformUp(element) {
+  element.classList.remove('transformDown');
+  element.classList.add('transformUp');
+}
+function transformDown(element) {
+  element.classList.remove('transformUp');
+  element.classList.add('transformDown');
 }
