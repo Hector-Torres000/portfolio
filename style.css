@@ -133,4 +133,9 @@ main section h2 {
     width: 100vw;
     left: 0;
   }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+  }
 }
