@@ -44,13 +44,13 @@ function getId(element) {
   return element.getAttribute('id');
 }
 
-function giveHidden(element) {
-  element.classList.add('hidden');
-}
+// function giveHidden(element) {
+//   element.classList.add('hidden');
+// }
 
-function removeHidden(element) {
-  element.classList.remove('hidden');
-}
+// function removeHidden(element) {
+//   element.classList.remove('hidden');
+// }
 
 function easeOut(element) {
   element.classList.remove('easeIn');
