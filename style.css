@@ -61,10 +61,6 @@ header .name span {
   /* border: solid 2px blue; */
 }
 /*---nav---*/
-nav,
-nav * {
-  /* border: solid 2px black; */
-}
 
 header nav ul {
   display: grid;
